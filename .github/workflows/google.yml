@@ -79,9 +79,9 @@ jobs:
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
       run: |-
-        sed -i "s/DEPLOYMENT_NAME/$DEPLOYMENT_NAME/g" deployment.yaml
-        sed -i "s/DEPLOYMENT_NAME/$DEPLOYMENT_NAME/g" service.yaml
-        sed -i "s/SERVICE_NAME/${{secrets.SERVICE_NAME}} /g" service.yaml
+        sed -i "s/DEPLOYMENT_NAME/$DEPLOYMENT_NAME/g" deployment.yml
+        sed -i "s/DEPLOYMENT_NAME/$DEPLOYMENT_NAME/g" service.yml
+        sed -i "s/SERVICE_NAME/${{secrets.SERVICE_NAME}} /g" service.yml
         # replacing the image name in the k8s template
         ./kustomize edit set image image-url=$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA
         ./kustomize build . | kubectl apply -f -
