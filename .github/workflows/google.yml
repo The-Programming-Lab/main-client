@@ -22,6 +22,8 @@ env:
   GKE_CLUSTER: main    # TODO: update to cluster name
   GKE_ZONE: us-central1-b   # TODO: update to cluster zone
   DEPLOYMENT_NAME: ${{ secrets.DEPLOYMENT_NAME}} # TODO: update to deployment name
+  REPOSITORY: hello-repo # TODO: update to Artifact Registry docker repository
+  IMAGE: ${{ secrets.DEPLOYMENT_NAME}}
 
 jobs:
   setup-build-publish-deploy:
