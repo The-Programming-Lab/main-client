@@ -1,0 +1,67 @@
+/* Colors */
+$primary-color: #142445;
+$secondary-color: #8AF7FF;
+$accent-color: #F6D29D;
+$metallic-color:#FCCA76;
+$neutral-color1: #08081E;
+$neutral-color2: #E9FAFB;
+$text-color: #FFFFFF;
+
+/* Font family */
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Roman.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('../fonts/AvenirLTStd-Black.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Font sizes */
+$h1-font-size: 3rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2.0625rem;
+$h4-font-size: 1.75rem;
+$h5-font-size: 1.4375rem;
+$title1-font-size: 1.1875rem;
+$base-font-size: 1rem;
+$small-base-font-size: 0.8125rem;
+$caption-font-size: 0.6875rem;
+
+
+
+
+
+/* Padding & margin sizes */
+$space-xsmall: 0.25rem; // 4px ÷ 16px = 0.25rem
+$space-small: 0.5rem; // 8px ÷ 16px = 0.5rem
+$space-medium: 1rem; // 16px ÷ 16px = 1rem
+$space-x-medium: 1.25rem; // 20px ÷ 16px = 1.25rem
+$space-large: 1.5rem; // 24px ÷ 16px = 1.5rem
+$space-x-large: 2rem; // 32px ÷ 16px = 2rem
+$space-xx-large: 2.5rem; // 40px ÷ 16px = 2.5rem
+$space-xxx-large: 3rem; // 48px ÷ 16px = 3rem
+$space-xxxx-large: 3.5rem; // 56px ÷ 16px = 3.5rem
+$space-xxxxx-large: 4rem; // 64px ÷ 16px = 4rem
+$space-xxxxxx-large: 4.5rem; // 72px ÷ 16px = 4.5rem
+$space-xxxxxxx-large: 5rem; // 80px ÷ 16px = 5rem
+$space-xxxxxxxx-large: 5.5rem; // 88px ÷ 16px = 5.5rem
+$space-xxxxxxxxx-large: 6rem; // 96px ÷ 16px = 6rem
+
+/* media queries */
+$mobile-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1023px;
+$desktop-min: 1024px;
+$large-desktop-min: 1440px;
+

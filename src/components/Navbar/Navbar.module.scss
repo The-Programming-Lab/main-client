@@ -1,0 +1,51 @@
+@use '../../styles/globals.scss' as g;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7.8125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2.5rem;
+  background: linear-gradient(to bottom, g.$primary-color 10%, transparent 100%);
+  z-index: 100;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 3.75rem;
+  text-decoration: none;
+}
+
+.buttonContainer{
+  display: flex;
+  gap: g.$space-large;
+}
+
+.linkContainer a {
+  text-decoration: none;
+  font-size: g.$h5-font-size;
+  color: g.$text-color;
+  font-weight: lighter;
+}
+
+.buttonContainer button{
+  padding: g.$space-xsmall g.$space-large;
+  border-radius: 25px;
+  font-size: g.$title1-font-size;
+  border: none;
+}
+.signupButton{
+  background-color: g.$primary-color;
+  color: g.$text-color;
+}
+
+.loginButton{
+ background-color: g.$secondary-color;
+ 
+}
+

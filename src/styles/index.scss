@@ -1,0 +1,11 @@
+@use "./globals" as g;
+
+html {
+  font-size: 16px;
+  font-family: 'avenir';
+}
+
+body {
+  background-color: g.$primary-color;
+  margin: 0;
+}
