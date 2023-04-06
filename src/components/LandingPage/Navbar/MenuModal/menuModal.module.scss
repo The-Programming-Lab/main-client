@@ -1,0 +1,57 @@
+@use '../../../../styles/globals.scss' as g;
+
+.modalContent{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: g.$space-medium g.$space-xx-large;
+  align-items: left;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.modalContainer{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: g.$secondary-color;
+  z-index: 1;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 12px;
+}
+
+.logoMobile{
+  h1{
+    color: g.$text-color;
+    font-size: g.$h3-font-size;
+  }
+}
+
+.navLink{
+  color: g.$text-color;
+  font-size: g.$title1-font-size;
+  text-decoration: none;
+  margin-bottom: 12px;
+
+  &:hover {
+    color: darken(g.$text-color, 30%);
+    cursor: pointer;
+  }
+}
+
+.hambergerMenu{
+  display: block;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+}
