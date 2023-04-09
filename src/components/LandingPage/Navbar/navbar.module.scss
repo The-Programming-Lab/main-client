@@ -12,6 +12,9 @@
     hsl(220deg 76% 51%) 100%
   );
   filter: blur(125px);
+  width: 50%;
+  position: absolute;
+  inset: 0;
 }
 
 .navContainer{
@@ -20,6 +23,7 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 
@@ -42,7 +46,9 @@
   h1{
     color: g.$text-color;
     font-size: g.$h3-font-size;
-  }
+  };
+
+  z-index: 10;
 }
 
 .logoDesktop{
@@ -96,6 +102,7 @@
     h1{
       color: g.$text-color;
     }
+    z-index: 10;
   }
 
   .hambergerMenu{

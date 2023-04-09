@@ -61,7 +61,7 @@ const Navbar = () => {
 
           <div className={styles.navContent}>
             <div className={styles.navLinks}>
-              <Link to="homeSection" smooth={true} duration={500}>
+              <Link to="heroSection" smooth={true} duration={500}>
                 Home
               </Link>
 

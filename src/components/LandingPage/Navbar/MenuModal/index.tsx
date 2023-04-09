@@ -15,7 +15,7 @@ const MenuModal = ({show,onClose}:MenuModalProps) => {
       <div className={styles.modalContent}>
         <div className={styles.header}>
        
-          <Link to="testSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
+          <Link to="heroSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
             Home
           </Link>
 
