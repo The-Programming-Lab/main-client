@@ -1,0 +1,80 @@
+@use '../../styles/globals.scss' as g;
+
+.heroContainer {
+  margin-top: g.$space-xxxxx-large;
+  padding-top: g.$space-xxx-large;
+  padding-bottom: g.$space-xxx-large;
+  padding-right: g.$space-xxx-large;
+  @media screen and (min-width: g.$desktop-min) {
+    padding-top: g.$space-xxxxx-large;
+    padding-bottom: g.$space-xxxxx-large;
+    padding-right: g.$space-xxxxx-large;
+  }
+}
+.staggerContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  @media screen and (min-width: g.$desktop-min) {
+    max-width: 1600px;
+  }
+}
+
+.heroText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  top: 40px;
+}
+
+.heroHeading{
+  font-weight: bold;
+  font-size: 44px;
+  color: g.$text-color;
+  line-height: 64.4px;
+  margin: 0;
+  @media screen and (min-width: g.$desktop-min) {
+    font-size: 100px;
+    line-height: 114.4px;
+  }
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  margin-top: -12px;
+  @media screen and (min-width: g.$desktop-min) {
+    margin-top: -20px;
+  }
+}
+
+.heroImageGradient{
+  position:absolute;
+  width: 100%;
+  height: 300px;
+  border-top-right-radius: 140px;
+  top: -30px;
+  z-index: 0;
+  background: linear-gradient(
+    97.86deg,
+    #a509ff 0%,
+    #34acc7 53.65%,
+    #a134c7 100%
+  );
+}
+
+.heroImage {
+  width: 100%;
+  height: 350px;
+  z-index: 1;
+  position: relative;
+  object-fit: cover;
+  border-top-right-radius: 140px;
+  @media screen and (min-width: g.$desktop-min) {
+    height: 650px;
+  }
+}
