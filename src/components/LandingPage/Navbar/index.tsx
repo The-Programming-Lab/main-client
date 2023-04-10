@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <motion.nav
         variants={navVariants}
-        initial="show"
+        initial="hidden"
         animate={hidden ? "hidden" : "show"}
         className={styles.navContainer}
       >

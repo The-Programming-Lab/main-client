@@ -17,8 +17,8 @@
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  background-color: g.$secondary-color;
-  z-index: 1;
+  background: linear-gradient(to bottom, g.$primary-color, g.$secondary-color);
+  z-index: 10;
 }
 
 .header{

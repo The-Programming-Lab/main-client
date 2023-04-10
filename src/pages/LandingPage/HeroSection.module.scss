@@ -4,11 +4,11 @@
   margin-top: g.$space-xxxxx-large;
   padding-top: g.$space-xxx-large;
   padding-bottom: g.$space-xxx-large;
-  padding-right: g.$space-xxx-large;
+  // padding-right: g.$space-xxx-large;
   @media screen and (min-width: g.$desktop-min) {
     padding-top: g.$space-xxxxx-large;
     padding-bottom: g.$space-xxxxx-large;
-    padding-right: g.$space-xxxxx-large;
+    // padding-right: g.$space-xxxxx-large;
   }
 }
 .staggerContainer {
@@ -47,24 +47,49 @@
   position: relative;
   width: 100%;
   margin-top: -12px;
+  // padding-right: g.$space-xxx-large;
+  box-sizing: border-box;
   @media screen and (min-width: g.$desktop-min) {
+    // padding-right: g.$space-xxxxx-large;
     margin-top: -20px;
+    box-sizing: border-box;
+  }
+}
+
+.heroGradientWrapper{
+  position: relative;
+  // padding-right: g.$space-xxx-large;
+  box-sizing: border-box;
+  @media screen and (min-width: g.$desktop-min) {
+    // padding-right: g.$space-xxxxx-large;
   }
 }
 
 .heroImageGradient{
-  position:absolute;
+  position: absolute;
   width: 100%;
   height: 300px;
-  border-top-right-radius: 140px;
-  top: -30px;
+  // border-top-right-radius: 40px;
+  // border-top-left-radius: 40px;
+  top: -10px;
   z-index: 0;
+  box-sizing: border-box;
   background: linear-gradient(
     97.86deg,
-    #a509ff 0%,
-    #34acc7 53.65%,
-    #a134c7 100%
+    rgba(165, 9, 255, 0.5) 0%,
+    rgba(52, 172, 199, 0.5) 53.65%,
+    rgba(161, 52, 199, 0.5) 100%
   );
+
+  left: 0;
+  padding-right: g.$space-xxx-large;
+
+  @media screen and (min-width: g.$desktop-min) {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    top: -20px;
+  }
+  
 }
 
 .heroImage {
@@ -73,8 +98,15 @@
   z-index: 1;
   position: relative;
   object-fit: cover;
-  border-top-right-radius: 140px;
+  // border-top-right-radius: 40px;
+  // border-bottom-right-radius: 40px;
+  // border-bottom-left-radius: 40px;
+  // border-top-left-radius: 40px;
   @media screen and (min-width: g.$desktop-min) {
     height: 650px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
   }
 }
