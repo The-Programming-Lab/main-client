@@ -16,6 +16,7 @@ const HeroSection = () => {
       }}
       className={styles.staggerContainer}
     >
+
       <div className={styles.heroText}>
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
           COLLABORATE
@@ -33,22 +34,15 @@ const HeroSection = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className={styles.heroImageContainer}
       >
-        {/* <div className={styles.heroImageGradient} /> */}
+        <div className={styles.heroGradientWrapper}>
+          <div className={styles.heroImageGradient} />
+        </div>
 
         <img
           src="/LandingPage/hero_image.png"
           alt="hero_cover"
           className={styles.heroImage}
         />
-        {/* <a href="#explore">
-          <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
-            <img
-              src="/stamp.png"
-              alt="stamp"
-              className="sm:w-[155px] w-[100px] sm:h-[155px] h-[100px] object-contain"
-            />
-          </div>
-        </a> */}
       </motion.div>
 
     </motion.div>

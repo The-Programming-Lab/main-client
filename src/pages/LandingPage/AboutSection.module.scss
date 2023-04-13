@@ -1,0 +1,91 @@
+@use '../../styles/globals.scss' as g;
+
+.sectionContainer{
+  position:relative;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 70%, #110523),url('/LandingPage/about_section_bg.png');
+  background-size: cover;
+  z-index: 1;
+  padding:g.$space-xxx-large g.$space-large;
+  @media screen and (min-width: g.$desktop-min) {
+    padding:g.$space-xxxxxxxxx-large;
+  }
+}
+
+
+
+
+.gradient{
+  position: absolute;
+  width: 200px;
+  height: 438px;
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+
+  background:#7aebfb;
+  filter: blur(190px);
+}
+
+.sectionContentContainer{
+  width: 100%;
+  height: 100vh;
+  @media screen and (min-width: g.$desktop-min) {
+    max-width: 2300px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+  flex-direction: column;
+  position:relative;
+  z-index: 10;
+
+}
+
+.headerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: left; 
+}
+
+.descriptionContainer{
+  text-align: center;
+  font-size: g.$title1-font-size;
+  color: g.$text-color2;
+  font-weight: 500;
+  margin-top: g.$space-small;
+  line-height: 2rem;
+  @media screen and (min-width: g.$desktop-min) {
+    margin-top: g.$space-xxxx-large;
+    font-size: g.$h3-font-size;
+    max-width: 1200px;
+    line-height: 3rem;
+  }
+}
+
+.boldText{
+  font-weight: bold;
+  color:g.$text-color;
+}
+
+.joinButton {
+  background-color: #FF69B4;
+  color: #ffffff;
+  padding: g.$space-medium g.$space-x-large;
+  border: 1px solid white;
+  border-radius: 45px;
+  margin-top: 30px;
+  font-size: g.$title1-font-size;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  @media screen and (min-width: g.$desktop-min) {
+    padding: g.$space-x-medium g.$space-xxxx-large;
+    font-size: g.$h5-font-size;
+  }
+}
+
+.joinButton:hover {
+  background-color: #d85791;
+}

@@ -1,0 +1,17 @@
+@use '../styles/globals.scss' as g;
+
+.typingTextContainer{
+  font-weight: bold;
+  font-size: 44px;
+  color: g.$text-color;
+  line-height: 64.4px;
+  margin: 0;
+  @media screen and (min-width: g.$desktop-min) {
+    font-size: 100px;
+    line-height: 114.4px;
+  }
+}
+
+.highlightLetter{
+  color: g.$accent-color2;
+}

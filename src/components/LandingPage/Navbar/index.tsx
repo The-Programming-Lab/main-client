@@ -10,7 +10,7 @@ import MenuModal from "./MenuModal";
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(false);
-  const [prevScrollYProgress, setPrevScrollYProgress] = useState(0);
+  const [prevScrollYProgress, setPrevScrollYProgress] = useState(1);
   const { scrollYProgress } = useScroll();
   const [menuModalOpen, setMenuOpenModal] = useState(false);
 
@@ -18,7 +18,7 @@ const Navbar = () => {
     if (latest > prevScrollYProgress) {
       setHidden(true);
     }
-    if (latest < prevScrollYProgress) {
+    if (latest <= prevScrollYProgress) {
       setHidden(false);
     }
     setPrevScrollYProgress(latest);
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       <motion.nav
         variants={navVariants}
-        initial="show"
+        initial="hidden"
         animate={hidden ? "hidden" : "show"}
         className={styles.navContainer}
       >
@@ -63,6 +63,10 @@ const Navbar = () => {
             <div className={styles.navLinks}>
               <Link to="heroSection" smooth={true} duration={500}>
                 Home
+              </Link>
+
+              <Link to="aboutSection" smooth={true} duration={500}>
+                About
               </Link>
 
               <Link to="testSection" smooth={true} duration={500}>
