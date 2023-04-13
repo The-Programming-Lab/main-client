@@ -23,6 +23,10 @@ const MenuModal = ({show,onClose}:MenuModalProps) => {
           <img src="/menu.svg" alt="menu" className={styles.hambergerMenu} onClick={()=>{onClose()}}/>
         </div>
 
+        <Link to="aboutSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
+          About
+        </Link>
+
         <Link to="testSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
           Features
         </Link>

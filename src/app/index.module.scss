@@ -1,9 +1,11 @@
+@use '../styles/globals.scss' as g;
 .mainContainer{
   overflow: hidden;
-  height: 4000px;
+  background-color: g.$primary-color;
+  height: auto;
 }
 
-.testSection{
-  position: relative;
-  top: 3000px;
-}
+// .testSection{
+//   position: relative;
+//   top: 3000px;
+// }
