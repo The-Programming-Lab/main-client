@@ -21,7 +21,7 @@ function App() {
   
     try {
       const result = await signInWithPopup(auth, provider);
-      const idToken = await auth.currentUser.getIdToken();
+      const idToken = await auth.currentUser?.getIdToken();
       console.log('ID Token:', idToken);
     } catch (error) {
       console.error('Error during sign-in:', error);
