@@ -57,6 +57,10 @@ jobs:
       with:
         cluster_name: ${{ env.GKE_CLUSTER }}
         location: ${{ env.GKE_ZONE }}
+    
+    # Set up environment variables
+    - name: Set up environment variables
+      run: echo "${{ secrets.FIREBASE_CONFIG }}" | jq -r 'to_entries | .[] | "\(.key)=\(.value)"' > .env.local
 
     # Build the Docker image
     - name: Build
