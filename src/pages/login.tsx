@@ -1,7 +1,8 @@
 import { initializeApp } from 'firebase/app';
-import { getAuth, signInWithPopup, GithubAuthProvider } from 'firebase/auth';
+import { getAuth, signInWithPopup, GithubAuthProvider, User } from 'firebase/auth';
+import { FC } from 'react';
 
-function App() {
+const App: FC = () => {
   const firebaseConfig = {
     apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
     authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
@@ -15,10 +16,10 @@ function App() {
 
   const firebaseApp = initializeApp(firebaseConfig);
 
-  async function signInWithGithubAndGetIdToken() {
+  async function signInWithGithubAndGetIdToken(): Promise<void> {
     const auth = getAuth();
     const provider = new GithubAuthProvider();
-  
+
     try {
       const result = await signInWithPopup(auth, provider);
       const idToken = await auth.currentUser?.getIdToken();
@@ -34,7 +35,7 @@ function App() {
         <button onClick={signInWithGithubAndGetIdToken}>Sign in GitHub</button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
