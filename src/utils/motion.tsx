@@ -127,3 +127,11 @@ export const textVariant2 = {
   },
 };
 
+export const blinkAnimation = {
+  opacity: [1, 0],
+  transition: {
+    duration: 2,
+    repeat: Infinity,
+  },
+};
+
