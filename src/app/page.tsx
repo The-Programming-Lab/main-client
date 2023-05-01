@@ -17,7 +17,9 @@ export default function LandingPage() {
       <div className={styles.sectionContainer}>
         <div className={styles.gradient4} />
         <FeaturesSection/>
-        <div className={styles.gradient4} />
+        <div className={styles.gradient5} />
+        <div className={styles.gradient6} />
+        <div className={styles.gradient7} />
       </div>
       
     </div>

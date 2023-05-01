@@ -1,28 +1,30 @@
-@use '../../styles/globals.scss' as g;
+@use "../../styles/globals.scss" as g;
 
-.sectionContainer{
-  position:relative;
+.sectionContainer {
+  position: relative;
   z-index: 1;
-  padding:g.$space-xxx-large g.$space-large;
+  padding: g.$space-xxx-large g.$space-large;
   @media screen and (min-width: g.$desktop-min) {
-    padding:g.$space-xxxxxxxxx-large;
+    padding: g.$space-xxxxxxxxx-large 16rem;
   }
 }
 
-
-.heroHeading{
+.heroHeading {
   font-weight: bold;
   font-size: 44px;
   color: g.$text-color;
   line-height: 64.4px;
-  margin: 0;
+  margin-bottom: g.$space-x-large;
+  //make font center
+  text-align: center;
   @media screen and (min-width: g.$desktop-min) {
     font-size: 100px;
     line-height: 114.4px;
+    margin-bottom: g.$space-xxxxxx-large;
   }
 }
 
-.featuresContainer{
+.featuresContainer {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -31,4 +33,179 @@
   @media screen and (min-width: g.$desktop-min) {
     max-width: 2300px;
   }
+}
+
+.featureSummaryContainer {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  gap: 10px;
+  @media screen and (min-width: g.$desktop-min) {
+    margin-bottom:g.$space-xxxx-large;
+  }
+}
+
+.sideBar {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 8.33%;
+  align-items: center;
+}
+
+.featureContent {
+  flex-basis: 91.67%;
+}
+
+
+.learnIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: g.$space-small;
+  @media screen and (min-width: g.$desktop-min) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.learnIcon img {
+  width: 100%;
+  height: auto;
+}
+
+
+.sideLine {
+  height: 100%;
+  width: 2px;
+  &.orange{
+    background: linear-gradient(to bottom, #ffd6cc, #ec6547,#ec6547, transparent);
+  }
+
+  &.green{
+    background: linear-gradient(to bottom,#eefff0,#56d364, #2ea043, transparent)
+  }
+
+  &.blue{
+    background: linear-gradient(to bottom,#abb4ff, #797ef9, transparent)
+  }
+  @media screen and (min-width: g.$desktop-min) {
+    width: 4px;
+  }
+}
+
+.featureHeading {
+  height: 40px;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  color: g.$text-color;
+  &.right{
+    justify-content: right;
+  }
+  @media screen and (min-width: g.$desktop-min) {
+    height: 60px;
+    font-size: 50px;
+  }
+}
+
+.featureDescription {
+  display: flex;
+  color: g.$text-color;
+  font-size: g.$h5-font-size;
+  &.right{
+    justify-content: right;
+  }
+
+  @media screen and (min-width: g.$desktop-min) {
+    font-size: g.$h1-font-size;
+    p {
+      width: 60%;
+    }
+  }
+}
+
+.HLContent {
+
+  &.green{
+    color:g.$accent-color4;
+  }
+  
+  &.orange{
+    color: g.$accent-color3;
+  }
+
+  &.blue{
+    color: g.$accent-color5;
+  }
+}
+
+.featureDetailsContainer{
+  margin-bottom: 50px;
+  @media screen and (min-width: g.$desktop-min) {
+    margin-bottom: 80px;
+  }
+}
+
+.learnDetail{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: g.$desktop-min) {
+    flex-direction: row;
+    gap: g.$space-xxx-large;
+  }
+}
+
+.featureImage{
+  border-radius: 30px;
+  width: 100%;
+  max-height: 1000px;
+  &.orange{
+    box-shadow: -10px -10px 5px rgba(255, 162, 139, 0.3);
+  }
+
+  &.green{
+    box-shadow: 10px -10px 5px rgba(126, 231, 135, 0.3);
+  }
+
+  &.blue{
+    box-shadow: -10px -10px 5px rgba(170, 173, 245, 0.3);
+  }
+
+  @media screen and (min-width: g.$desktop-min) {
+    flex-basis: 60%;
+    width: 50%;
+  }
+}
+
+.detailText{
+  color: g.$text-color;
+  font-size: g.$title1-font-size;
+
+  @media screen and (min-width: g.$desktop-min) {
+    font-size: g.$h2-font-size;
+    width: 40%;
+  }
+}
+
+.detail{
+  display: flex;
+  align-items: center;
+  gap:30px;
+}
+
+.detailNumber{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #323F5D;
+  font-color: g.$text-color;
+  height: 70px;
+  width: 70px;
+  flex-shrink: 0;
+  font-size: g.$base-font-size;
+  border-radius: 10px;
 }

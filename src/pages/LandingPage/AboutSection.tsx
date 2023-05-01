@@ -54,7 +54,7 @@ const AboutSection = () => (
         </motion.div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("up", "tween", 0.3, 1)}
         initial="hidden"
         whileInView="show"
@@ -66,7 +66,7 @@ const AboutSection = () => (
           className={styles.arrowDown}
           animate={blinkAnimation}
         />
-      </motion.div>
+      </motion.div> */}
 
     </div>
   </section>

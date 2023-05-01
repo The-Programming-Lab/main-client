@@ -34,3 +34,30 @@
   filter: blur(200px);
   transform: rotate(-53.13deg);
 }
+
+.gradient5{
+  position: absolute;
+  z-index:1;
+  width: 200px;
+  height: 100vh;
+  left: 70%;
+  top: 50%;
+
+  background: rgba(129, 103, 135, 0.75);
+  filter: blur(200px);
+  transform: rotate(100.13deg);
+}
+
+.gradient6{
+  z-index: 1;
+  position: absolute;
+  width: 404px;
+  height: 800px;
+  left: 70%;
+  top: 90%;
+
+  background: rgba(198, 164, 233, 0.35);
+  filter: blur(175px);
+  transform: rotate(-114.2deg);
+}
+
