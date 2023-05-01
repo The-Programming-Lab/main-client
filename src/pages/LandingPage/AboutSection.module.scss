@@ -2,13 +2,14 @@
 
 .sectionContainer{
   position:relative;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 70%, #110523),url('/LandingPage/about_section_bg.png');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 70%, #110523),linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, #110523),url('/LandingPage/about_section_bg.png');
   background-size: cover;
   z-index: 1;
-  padding:g.$space-xxx-large g.$space-large;
+  padding:g.$space-xxx-large g.$space-large 0 g.$space-large;
   @media screen and (min-width: g.$desktop-min) {
-    padding:g.$space-xxxxxxxxx-large;
+    padding:g.$space-xxxxxxxxx-large g.$space-xxxxxxxxx-large 0 g.$space-xxxxxxxxx-large;
   }
+  box-sizing: border-box;
 }
 
 
@@ -27,10 +28,11 @@
 }
 
 .sectionContentContainer{
-  width: 100%;
-  height: 100vh;
+  width: 85%;
   @media screen and (min-width: g.$desktop-min) {
     max-width: 2300px;
+    flex-direction: row;
+    gap: g.$space-xxxxx-large;
   }
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +52,10 @@
 }
 
 .descriptionContainer{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
   font-size: g.$title1-font-size;
   color: g.$text-color2;
   font-weight: 500;
@@ -58,9 +63,10 @@
   line-height: 2rem;
   @media screen and (min-width: g.$desktop-min) {
     margin-top: g.$space-xxxx-large;
-    font-size: g.$h3-font-size;
-    max-width: 1200px;
-    line-height: 3rem;
+    font-size: g.$h5-font-size;
+    text-align: left;
+    max-width: 800px;
+    line-height: 2rem;
   }
 }
 
@@ -80,12 +86,33 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
+  width: 100%;
   @media screen and (min-width: g.$desktop-min) {
     padding: g.$space-x-medium g.$space-xxxx-large;
     font-size: g.$h5-font-size;
+    max-width: 60%;
   }
 }
 
 .joinButton:hover {
-  background-color: #d85791;
+  background-color: darken(g.$accent-color, 30%);
+  cursor: pointer;
 }
+
+.sectionContainerFlex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: g.$space-xxxxx-large;
+}
+
+.arrowDown{
+  width: 18px;
+  height: 28px;
+  object-fit: contain;
+  margin-top: g.$space-large;
+}
+
+// "w-[18px] h-[28px] object-contain mt-[28px]"

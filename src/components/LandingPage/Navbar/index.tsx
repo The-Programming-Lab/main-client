@@ -62,24 +62,21 @@ const Navbar = () => {
           <div className={styles.navContent}>
             <div className={styles.navLinks}>
               <Link to="heroSection" smooth={true} duration={500}>
-                Home
+                Mission
               </Link>
 
               <Link to="aboutSection" smooth={true} duration={500}>
                 About
               </Link>
 
-              <Link to="testSection" smooth={true} duration={500}>
+              <Link to="solutionsSection" smooth={true} duration={500}>
                 Features
               </Link>
 
-              <Link to="testSection" smooth={true} duration={500}>
+              <Link to="projectsSection" smooth={true} duration={500}>
                 Projects
               </Link>
 
-              <Link to="testSection" smooth={true} duration={500}>
-                About
-              </Link>
             </div>
 
             <button className={styles.actionButton}>Get Started</button>
