@@ -1,16 +1,17 @@
-import '../styles/index.scss'
+import { AuthContextProvider } from "../context/AuthContext";
+import "../styles/index.scss";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <head />
       <body>
-        {children}
+        <AuthContextProvider>{children}</AuthContextProvider>
       </body>
     </html>
-  )
+  );
 }

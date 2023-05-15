@@ -1,8 +1,8 @@
 
 import Navbar from '../components/LandingPage/Navbar';
-import AboutSection from '../pages/LandingPage/AboutSection';
-import FeaturesSection from '../pages/LandingPage/FeaturesSection';
-import HeroSection from '../pages/LandingPage/HeroSection';
+import AboutSection from '../components/LandingPage/AboutSection';
+import FeaturesSection from '../components/LandingPage/FeaturesSection';
+import HeroSection from '../components/LandingPage/HeroSection';
 import styles from './index.module.scss';
 
 export default function LandingPage() {

@@ -1,10 +1,10 @@
 "use client";
 
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { TypingText } from "../../components/CustomTexts";
 
 import styles from "./AboutSection.module.scss";
-import { fadeIn, staggerContainer, blinkAnimation } from "../../utils/motion";
+import { fadeIn, staggerContainer } from "../../utils/motion";
 
 const AboutSection = () => (
   <section className={styles.sectionContainer} id="aboutSection">
