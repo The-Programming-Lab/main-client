@@ -15,11 +15,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: SERVICE_NAME
+  name: main-client
+  namescape: tpl
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
     - port: 80
       targetPort: 3000
   selector:
-    app: DEPLOYMENT_NAME
+    app: main-client

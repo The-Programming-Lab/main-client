@@ -15,12 +15,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: DEPLOYMENT_NAME
+  name: main-client
+  namespace: tpl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: DEPLOYMENT_NAME
+      app: main-client
   strategy:
     rollingUpdate:
       maxSurge: 1
@@ -29,10 +30,10 @@ spec:
   template:
     metadata:
       labels:
-        app: DEPLOYMENT_NAME
+        app: main-client
     spec:
       containers:
-      - name: DEPLOYMENT_NAME
+      - name: main-client
         image: image-url
         ports:
         - containerPort: 3000
