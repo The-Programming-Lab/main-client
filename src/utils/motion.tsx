@@ -127,3 +127,32 @@ export const textVariant2 = {
   },
 };
 
+export const blinkAnimation = {
+  opacity: [1, 0],
+  transition: {
+    duration: 2,
+    repeat: Infinity,
+  },
+};
+
+export const slideDown = {
+  hidden: {
+    opacity: 0,
+    y: -10,
+    transition: {
+      type: 'spring',
+      stiffness: 300,
+      damping: 20,
+    },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 50,
+      delay: 0.3,
+    },
+  },
+};
+

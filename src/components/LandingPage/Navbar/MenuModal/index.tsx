@@ -16,10 +16,8 @@ const MenuModal = ({show,onClose}:MenuModalProps) => {
         <div className={styles.header}>
        
           <Link to="heroSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
-            Home
+            Mission
           </Link>
-
-
           <img src="/menu.svg" alt="menu" className={styles.hambergerMenu} onClick={()=>{onClose()}}/>
         </div>
 
@@ -27,16 +25,12 @@ const MenuModal = ({show,onClose}:MenuModalProps) => {
           About
         </Link>
 
-        <Link to="testSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
+        <Link to="solutionsSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
           Features
         </Link>
 
-        <Link to="testSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
+        <Link to="projectsSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
           Projects
-        </Link>
-
-        <Link to="testSection" smooth={true} duration={500} className={styles.navLink} onClick={()=>{onClose()}}>
-          About
         </Link>
         
       </div>
