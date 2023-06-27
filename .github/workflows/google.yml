@@ -60,7 +60,7 @@ jobs:
     
     # Set up environment variables
     - name: Set up environment variables
-      run: echo "${{ secrets.FIREBASE_CONFIG }}" > .env.local
+      run: echo "${{ secrets.ENV_FILE }}" > .env.local
 
     # Build the Docker image
     - name: Build
