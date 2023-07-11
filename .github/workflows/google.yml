@@ -83,7 +83,7 @@ jobs:
 #       run: |-
 #         docker push "$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA"
     - name: Push Docker image to GCR
-      run: docker push ${{ env.IMAGE }
+      run: docker push ${{ env.IMAGE }}
 
 #     # Set up kustomize
 #     - name: Set up Kustomize
